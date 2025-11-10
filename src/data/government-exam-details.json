@@ -1,0 +1,589 @@
+{
+  "ssc-cgl": {
+    "id": "ge1",
+    "slug": "ssc-cgl",
+    "category": "SSC",
+    "examName": "SSC CGL",
+    "title": "SSC CGL (Combined Graduate Level)",
+    "description": "Complete preparation package for SSC CGL exam with mock tests, live classes, and study materials",
+    "rating": 4.8,
+    "students": 15420,
+    "teachers": 12,
+    "price": 12999,
+    "validityDays": 365,
+    "features": [
+      "200+ Mock Tests",
+      "50+ PYP (Previous Year Papers)",
+      "Live Classes Daily",
+      "24/7 Doubt Support",
+      "E-Books & Study Materials"
+    ],
+    "mockTests": {
+      "pyp": [
+        {
+          "id": "pyp1",
+          "title": "SSC CGL 2023 Tier-I",
+          "year": 2023,
+          "questions": 100,
+          "duration": 60,
+          "marks": 200,
+          "attempted": 4520,
+          "averageScore": 142
+        },
+        {
+          "id": "pyp2",
+          "title": "SSC CGL 2022 Tier-I",
+          "year": 2022,
+          "questions": 100,
+          "duration": 60,
+          "marks": 200,
+          "attempted": 5820,
+          "averageScore": 138
+        },
+        {
+          "id": "pyp3",
+          "title": "SSC CGL 2021 Tier-I",
+          "year": 2021,
+          "questions": 100,
+          "duration": 60,
+          "marks": 200,
+          "attempted": 6120,
+          "averageScore": 135
+        }
+      ],
+      "mcq": [
+        {
+          "id": "mcq1",
+          "title": "Quantitative Aptitude - Full Mock Test 1",
+          "questions": 25,
+          "duration": 20,
+          "marks": 50,
+          "difficulty": "Medium",
+          "attempted": 8920
+        },
+        {
+          "id": "mcq2",
+          "title": "General Intelligence - Mock Test 1",
+          "questions": 25,
+          "duration": 20,
+          "marks": 50,
+          "difficulty": "Easy",
+          "attempted": 7540
+        },
+        {
+          "id": "mcq3",
+          "title": "English Language - Mock Test 1",
+          "questions": 25,
+          "duration": 20,
+          "marks": 50,
+          "difficulty": "Hard",
+          "attempted": 6230
+        },
+        {
+          "id": "mcq4",
+          "title": "General Awareness - Mock Test 1",
+          "questions": 25,
+          "duration": 20,
+          "marks": 50,
+          "difficulty": "Medium",
+          "attempted": 7890
+        }
+      ]
+    },
+    "subjects": [
+      {
+        "id": "sub1",
+        "name": "Quantitative Aptitude",
+        "icon": "Calculator",
+        "totalChapters": 15,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch1",
+            "title": "Number System",
+            "totalClasses": 3,
+            "classes": [
+              {
+                "id": "class1",
+                "title": "Introduction to Number System",
+                "instructor": "Dr. Rajesh Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-15",
+                  "time": "18:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1240,
+                "isFree": true
+              },
+              {
+                "id": "class2",
+                "title": "Types of Numbers",
+                "instructor": "Dr. Rajesh Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-16",
+                  "time": "18:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1180
+              },
+              {
+                "id": "class3",
+                "title": "Number System Practice",
+                "instructor": "Dr. Rajesh Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-17",
+                  "time": "18:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1150
+              }
+            ]
+          },
+          {
+            "id": "ch2",
+            "title": "Percentage",
+            "totalClasses": 2,
+            "classes": [
+              {
+                "id": "class4",
+                "title": "Percentage Basics",
+                "instructor": "Dr. Rajesh Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-10",
+                  "time": "18:00",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "#",
+                  "duration": "1h 32m",
+                  "views": 2340
+                },
+                "enrolledStudents": 1450,
+                "isFree": true
+              },
+              {
+                "id": "class5",
+                "title": "Percentage Advanced",
+                "instructor": "Dr. Rajesh Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-11",
+                  "time": "18:00",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "#",
+                  "duration": "1h 28m",
+                  "views": 2180
+                },
+                "enrolledStudents": 1420
+              }
+            ]
+          },
+          {
+            "id": "ch3",
+            "title": "Ratio & Proportion",
+            "totalClasses": 2,
+            "classes": [
+              {
+                "id": "class6",
+                "title": "Ratio Fundamentals",
+                "instructor": "Dr. Rajesh Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-18",
+                  "time": "18:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1100
+              },
+              {
+                "id": "class7",
+                "title": "Proportion & Applications",
+                "instructor": "Dr. Rajesh Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-19",
+                  "time": "18:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1080
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sub2",
+        "name": "General Intelligence",
+        "icon": "Brain",
+        "totalChapters": 12,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch4",
+            "title": "Analogies",
+            "totalClasses": 2,
+            "classes": [
+              {
+                "id": "class8",
+                "title": "Pattern Recognition Techniques",
+                "instructor": "Prof. Anita Sharma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-18",
+                  "time": "19:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 980
+              },
+              {
+                "id": "class9",
+                "title": "Advanced Analogies",
+                "instructor": "Prof. Anita Sharma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-20",
+                  "time": "19:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 950
+              }
+            ]
+          },
+          {
+            "id": "ch5",
+            "title": "Coding-Decoding",
+            "totalClasses": 2,
+            "classes": [
+              {
+                "id": "class10",
+                "title": "Coding Basics",
+                "instructor": "Prof. Anita Sharma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-21",
+                  "time": "19:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 920
+              },
+              {
+                "id": "class11",
+                "title": "Decoding Strategies",
+                "instructor": "Prof. Anita Sharma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-22",
+                  "time": "19:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 900
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sub3",
+        "name": "English Language",
+        "icon": "BookOpen",
+        "totalChapters": 10,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch6",
+            "title": "Grammar Basics",
+            "totalClasses": 1,
+            "classes": [
+              {
+                "id": "class12",
+                "title": "Grammar Masterclass",
+                "instructor": "Mr. Vikram Singh",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-12",
+                  "time": "18:00",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "#",
+                  "duration": "1h 28m",
+                  "views": 1540
+                },
+                "enrolledStudents": 1540
+              }
+            ]
+          },
+          {
+            "id": "ch7",
+            "title": "Vocabulary",
+            "totalClasses": 2,
+            "classes": [
+              {
+                "id": "class13",
+                "title": "Word Building Techniques",
+                "instructor": "Mr. Vikram Singh",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-23",
+                  "time": "18:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1200
+              },
+              {
+                "id": "class14",
+                "title": "Vocabulary for Exams",
+                "instructor": "Mr. Vikram Singh",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-24",
+                  "time": "18:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sub4",
+        "name": "General Awareness",
+        "icon": "Globe",
+        "totalChapters": 14,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch8",
+            "title": "Indian History",
+            "totalClasses": 2,
+            "classes": [
+              {
+                "id": "class15",
+                "title": "Ancient India",
+                "instructor": "Dr. Priya Mehta",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-25",
+                  "time": "17:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1300
+              },
+              {
+                "id": "class16",
+                "title": "Modern India",
+                "instructor": "Dr. Priya Mehta",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-26",
+                  "time": "17:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1280
+              }
+            ]
+          },
+          {
+            "id": "ch9",
+            "title": "Indian Polity",
+            "totalClasses": 1,
+            "classes": [
+              {
+                "id": "class17",
+                "title": "Constitution Basics",
+                "instructor": "Dr. Priya Mehta",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-27",
+                  "time": "17:00",
+                  "status": "upcoming"
+                },
+                "recordedVideo": null,
+                "enrolledStudents": 1260
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "liveClasses": [
+      {
+        "id": "lc1",
+        "title": "Quantitative Aptitude - Speed & Time",
+        "instructor": "Dr. Rajesh Kumar",
+        "subject": "Quantitative Aptitude",
+        "date": "2025-10-15",
+        "time": "18:00",
+        "duration": 90,
+        "status": "upcoming",
+        "enrolledStudents": 1240
+      },
+      {
+        "id": "lc2",
+        "title": "General Intelligence - Pattern Recognition",
+        "instructor": "Prof. Anita Sharma",
+        "subject": "General Intelligence",
+        "date": "2025-10-16",
+        "time": "19:00",
+        "duration": 90,
+        "status": "upcoming",
+        "enrolledStudents": 980
+      },
+      {
+        "id": "lc3",
+        "title": "English Grammar Masterclass",
+        "instructor": "Mr. Vikram Singh",
+        "subject": "English Language",
+        "date": "2025-10-12",
+        "time": "18:00",
+        "duration": 90,
+        "status": "completed",
+        "enrolledStudents": 1540
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "sm1",
+        "title": "Quantitative Aptitude Complete Notes",
+        "type": "PDF",
+        "subject": "Quantitative Aptitude",
+        "size": "12.5 MB",
+        "pages": 240,
+        "downloads": 8920
+      },
+      {
+        "id": "sm2",
+        "title": "General Intelligence Practice Questions",
+        "type": "PDF",
+        "subject": "General Intelligence",
+        "size": "8.2 MB",
+        "pages": 180,
+        "downloads": 7540
+      },
+      {
+        "id": "sm3",
+        "title": "English Grammar & Vocabulary",
+        "type": "PDF",
+        "subject": "English Language",
+        "size": "10.8 MB",
+        "pages": 200,
+        "downloads": 6890
+      },
+      {
+        "id": "sm4",
+        "title": "General Awareness Current Affairs 2024",
+        "type": "PDF",
+        "subject": "General Awareness",
+        "size": "15.3 MB",
+        "pages": 320,
+        "downloads": 9450
+      }
+    ]
+  },
+  "ibps-po": {
+    "id": "ge2",
+    "slug": "ibps-po",
+    "category": "Banking",
+    "examName": "IBPS PO",
+    "title": "IBPS PO (Probationary Officer)",
+    "description": "Complete preparation package for IBPS PO exam with comprehensive study materials and practice tests",
+    "rating": 4.7,
+    "students": 12340,
+    "teachers": 10,
+    "price": 14999,
+    "validityDays": 365,
+    "features": [
+      "180+ Mock Tests",
+      "40+ PYP (Previous Year Papers)",
+      "Live Classes 5 Days/Week",
+      "Interview Preparation",
+      "Banking Awareness Updates"
+    ],
+    "mockTests": {
+      "pyp": [
+        {
+          "id": "pyp1",
+          "title": "IBPS PO 2023 Prelims",
+          "year": 2023,
+          "questions": 100,
+          "duration": 60,
+          "marks": 100,
+          "attempted": 3820,
+          "averageScore": 68
+        }
+      ],
+      "mcq": [
+        {
+          "id": "mcq1",
+          "title": "Reasoning Ability - Mock Test 1",
+          "questions": 35,
+          "duration": 20,
+          "marks": 35,
+          "difficulty": "Medium",
+          "attempted": 6720
+        }
+      ]
+    },
+    "subjects": [
+      {
+        "id": "sub1",
+        "name": "Quantitative Aptitude",
+        "icon": "Calculator",
+        "totalChapters": 14,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch1",
+            "title": "Data Interpretation",
+            "totalClasses": 15,
+            "classes": []
+          }
+        ]
+      }
+    ],
+    "liveClasses": [
+      {
+        "id": "lc1",
+        "title": "Banking Awareness Session",
+        "instructor": "Mr. Arun Patel",
+        "subject": "Banking Awareness",
+        "date": "2025-10-14",
+        "time": "17:00",
+        "duration": 90,
+        "status": "upcoming",
+        "enrolledStudents": 890
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "sm1",
+        "title": "Banking Awareness 2024",
+        "type": "PDF",
+        "subject": "Banking Awareness",
+        "size": "18.5 MB",
+        "pages": 380,
+        "downloads": 7820
+      }
+    ]
+  }
+}

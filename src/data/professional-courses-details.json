@@ -1,0 +1,705 @@
+{
+  "spoken-english": {
+    "id": "pc1",
+    "slug": "spoken-english",
+    "board": "Language",
+    "class": "Professional",
+    "title": "Spoken English",
+    "description": "Master English speaking skills with our comprehensive course covering grammar, vocabulary, pronunciation, and real-world conversation practice.",
+    "rating": 4.8,
+    "students": 2340,
+    "teachers": 5,
+    "price": 4999,
+    "validityDays": 180,
+    "subjects": [
+      {
+        "id": "grammar",
+        "name": "Grammar",
+        "icon": "BookOpen",
+        "totalChapters": 3,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch1",
+            "title": "Tenses and Sentence Structure",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls1",
+                "title": "Introduction to English Tenses",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-15",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 580,
+                "isFree": true
+              },
+              {
+                "id": "cls2",
+                "title": "Present Tense Forms",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-17",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 575
+              },
+              {
+                "id": "cls3",
+                "title": "Past Tense Usage",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-10",
+                  "time": "6:00 PM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/past-tense.mp4",
+                  "duration": "1:02:15",
+                  "views": 820
+                },
+                "enrolledStudents": 570
+              },
+              {
+                "id": "cls4",
+                "title": "Future Tense Concepts",
+                "instructor": "Mr. David Miller",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-19",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 565
+              },
+              {
+                "id": "cls5",
+                "title": "Perfect Tenses",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-21",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 560
+              },
+              {
+                "id": "cls6",
+                "title": "Continuous Tenses",
+                "instructor": "Mr. David Miller",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-23",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 555
+              },
+              {
+                "id": "cls7",
+                "title": "Sentence Formation Basics",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-25",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 550
+              },
+              {
+                "id": "cls8",
+                "title": "Complex Sentences",
+                "instructor": "Mr. David Miller",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-27",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 545
+              },
+              {
+                "id": "cls9",
+                "title": "Active and Passive Voice",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-29",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 540
+              },
+              {
+                "id": "cls10",
+                "title": "Grammar Practice Session",
+                "instructor": "Mr. David Miller",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-31",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 535
+              }
+            ]
+          },
+          {
+            "id": "ch2",
+            "title": "Articles and Prepositions",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls11",
+                "title": "Understanding Articles (A, An, The)",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-02",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 530,
+                "isFree": true
+              },
+              {
+                "id": "cls12",
+                "title": "When to Use Articles",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-04",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 525
+              },
+              {
+                "id": "cls13",
+                "title": "Prepositions of Time",
+                "instructor": "Mr. David Miller",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-06",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 520
+              },
+              {
+                "id": "cls14",
+                "title": "Prepositions of Place",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-08",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 515
+              },
+              {
+                "id": "cls15",
+                "title": "Prepositions of Movement",
+                "instructor": "Mr. David Miller",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-10",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 510
+              },
+              {
+                "id": "cls16",
+                "title": "Common Prepositional Phrases",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-12",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 505
+              },
+              {
+                "id": "cls17",
+                "title": "Articles in Context",
+                "instructor": "Mr. David Miller",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-14",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 500
+              },
+              {
+                "id": "cls18",
+                "title": "Common Mistakes with Articles",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-16",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 495
+              },
+              {
+                "id": "cls19",
+                "title": "Preposition Practice Exercises",
+                "instructor": "Mr. David Miller",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-18",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 490
+              },
+              {
+                "id": "cls20",
+                "title": "Chapter Review and Test",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-20",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 485
+              }
+            ]
+          },
+          {
+            "id": "ch3",
+            "title": "Parts of Speech",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls21",
+                "title": "Introduction to Parts of Speech",
+                "instructor": "Mr. David Miller",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-22",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 480,
+                "isFree": true
+              },
+              {
+                "id": "cls22",
+                "title": "Nouns and Pronouns",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-24",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 475
+              },
+              {
+                "id": "cls23",
+                "title": "Verbs and Adverbs",
+                "instructor": "Mr. David Miller",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-26",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 470
+              },
+              {
+                "id": "cls24",
+                "title": "Adjectives",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-28",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 465
+              },
+              {
+                "id": "cls25",
+                "title": "Conjunctions",
+                "instructor": "Mr. David Miller",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-30",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 460
+              },
+              {
+                "id": "cls26",
+                "title": "Interjections",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-12-02",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 455
+              },
+              {
+                "id": "cls27",
+                "title": "Using Parts of Speech Correctly",
+                "instructor": "Mr. David Miller",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-12-04",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 450
+              },
+              {
+                "id": "cls28",
+                "title": "Common Grammar Errors",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-12-06",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 445
+              },
+              {
+                "id": "cls29",
+                "title": "Grammar in Daily Conversation",
+                "instructor": "Mr. David Miller",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-12-08",
+                  "time": "7:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 440
+              },
+              {
+                "id": "cls30",
+                "title": "Grammar Mastery Test",
+                "instructor": "Ms. Sarah Johnson",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-12-10",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 435
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "basic-computer": {
+    "id": "pc2",
+    "slug": "basic-computer",
+    "board": "Computer",
+    "class": "Professional",
+    "title": "Basic Computer Course",
+    "description": "Learn essential computer skills including MS Office, internet basics, email management, and typing for professional and personal use.",
+    "rating": 4.7,
+    "students": 3120,
+    "teachers": 6,
+    "price": 3999,
+    "validityDays": 180,
+    "subjects": [
+      {
+        "id": "ms-office",
+        "name": "MS Office",
+        "icon": "Calculator",
+        "totalChapters": 2,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch1",
+            "title": "Microsoft Word",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls1",
+                "title": "Introduction to MS Word",
+                "instructor": "Mr. Rajesh Verma",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-14",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 780,
+                "isFree": true
+              },
+              {
+                "id": "cls2",
+                "title": "Document Formatting Basics",
+                "instructor": "Mr. Rajesh Verma",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-09",
+                  "time": "5:00 PM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/word-formatting.mp4",
+                  "duration": "1:18:20",
+                  "views": 1240
+                },
+                "enrolledStudents": 775
+              },
+              {
+                "id": "cls3",
+                "title": "Working with Tables",
+                "instructor": "Ms. Priya Kapoor",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-16",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 770
+              },
+              {
+                "id": "cls4",
+                "title": "Images and Graphics",
+                "instructor": "Mr. Rajesh Verma",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-18",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 765
+              },
+              {
+                "id": "cls5",
+                "title": "Page Layout and Design",
+                "instructor": "Ms. Priya Kapoor",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-20",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 760
+              },
+              {
+                "id": "cls6",
+                "title": "Headers and Footers",
+                "instructor": "Mr. Rajesh Verma",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-22",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 755
+              },
+              {
+                "id": "cls7",
+                "title": "Mail Merge",
+                "instructor": "Ms. Priya Kapoor",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-24",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 750
+              },
+              {
+                "id": "cls8",
+                "title": "Templates and Styles",
+                "instructor": "Mr. Rajesh Verma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-26",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 745
+              },
+              {
+                "id": "cls9",
+                "title": "Document Collaboration",
+                "instructor": "Ms. Priya Kapoor",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-28",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 740
+              },
+              {
+                "id": "cls10",
+                "title": "MS Word Projects and Practice",
+                "instructor": "Mr. Rajesh Verma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-30",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 735
+              }
+            ]
+          },
+          {
+            "id": "ch2",
+            "title": "Microsoft Excel",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls11",
+                "title": "Introduction to Excel",
+                "instructor": "Ms. Anita Desai",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-01",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 730,
+                "isFree": true
+              },
+              {
+                "id": "cls12",
+                "title": "Basic Formulas and Functions",
+                "instructor": "Ms. Anita Desai",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-12",
+                  "time": "5:00 PM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/excel-formulas.mp4",
+                  "duration": "1:22:45",
+                  "views": 1580
+                },
+                "enrolledStudents": 725
+              },
+              {
+                "id": "cls13",
+                "title": "Cell Formatting and Data Entry",
+                "instructor": "Mr. Suresh Patil",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-03",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 720
+              },
+              {
+                "id": "cls14",
+                "title": "Working with Charts",
+                "instructor": "Ms. Anita Desai",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-05",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 715
+              },
+              {
+                "id": "cls15",
+                "title": "Data Sorting and Filtering",
+                "instructor": "Mr. Suresh Patil",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-07",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 710
+              },
+              {
+                "id": "cls16",
+                "title": "VLOOKUP and HLOOKUP",
+                "instructor": "Ms. Anita Desai",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-09",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 705
+              },
+              {
+                "id": "cls17",
+                "title": "Conditional Formatting",
+                "instructor": "Mr. Suresh Patil",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-11",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 700
+              },
+              {
+                "id": "cls18",
+                "title": "Pivot Tables Basics",
+                "instructor": "Ms. Anita Desai",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-13",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 695
+              },
+              {
+                "id": "cls19",
+                "title": "Data Validation",
+                "instructor": "Mr. Suresh Patil",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-15",
+                  "time": "6:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 690
+              },
+              {
+                "id": "cls20",
+                "title": "Excel Projects and Practice",
+                "instructor": "Ms. Anita Desai",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-17",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 685
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

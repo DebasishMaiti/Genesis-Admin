@@ -1,0 +1,86 @@
+{
+  "list": [
+    {
+      "id": "pc1",
+      "category": "Language",
+      "title": "Spoken English",
+      "subjects": ["Grammar", "Vocabulary", "Pronunciation", "Conversation"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.8,
+      "students": 2340,
+      "teachers": 5,
+      "price": 4999,
+      "href": "/professional-courses/spoken-english",
+      "slug": "spoken-english"
+    },
+    {
+      "id": "pc2",
+      "category": "Computer",
+      "title": "Basic Computer Course",
+      "subjects": ["MS Office", "Internet", "Email", "Typing"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.7,
+      "students": 3120,
+      "teachers": 6,
+      "price": 3999,
+      "href": "/professional-courses/basic-computer",
+      "slug": "basic-computer"
+    },
+    {
+      "id": "pc3",
+      "category": "Computer",
+      "title": "Advanced Excel",
+      "subjects": ["Formulas", "Pivot Tables", "Macros", "Data Analysis"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.9,
+      "students": 1850,
+      "teachers": 4,
+      "price": 5999,
+      "href": "/professional-courses/advanced-excel",
+      "slug": "advanced-excel"
+    },
+    {
+      "id": "pc4",
+      "category": "Language",
+      "title": "Business Communication",
+      "subjects": ["Email Writing", "Presentation Skills", "Report Writing", "Meetings"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.6,
+      "students": 1520,
+      "teachers": 4,
+      "price": 6999,
+      "href": "/professional-courses/business-communication",
+      "slug": "business-communication"
+    },
+    {
+      "id": "pc5",
+      "category": "Technical",
+      "title": "Digital Marketing Basics",
+      "subjects": ["SEO", "Social Media", "Email Marketing", "Analytics"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.8,
+      "students": 2680,
+      "teachers": 7,
+      "price": 8999,
+      "href": "/professional-courses/digital-marketing",
+      "slug": "digital-marketing"
+    },
+    {
+      "id": "pc6",
+      "category": "Design",
+      "title": "Graphic Design Fundamentals",
+      "subjects": ["Photoshop", "Illustrator", "CorelDraw", "Design Theory"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.7,
+      "students": 1940,
+      "teachers": 5,
+      "price": 9999,
+      "href": "/professional-courses/graphic-design",
+      "slug": "graphic-design"
+    }
+  ],
+  "pagination": {
+    "total": 6,
+    "perPage": 12
+  }
+}

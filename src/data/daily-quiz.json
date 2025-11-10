@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Daily Quiz",
+    "description": "Test your knowledge with our daily practice questions and improve your preparation",
+    "totalQuizzes": 50
+  },
+  "list": [
+    {
+      "id": "dq1",
+      "title": "General Knowledge",
+      "category": "GK",
+      "questions": 25,
+      "time": "30 mins",
+      "difficulty": "Easy",
+      "points": 50,
+      "href": "/quiz/general-knowledge-1"
+    },
+    {
+      "id": "dq2", 
+      "title": "Current Affairs",
+      "category": "Current Affairs",
+      "questions": 20,
+      "time": "25 mins",
+      "difficulty": "Medium", 
+      "points": 60,
+      "href": "/quiz/current-affairs-1"
+    },
+    {
+      "id": "dq3",
+      "title": "Mathematics",
+      "category": "Mathematics",
+      "questions": 30,
+      "time": "45 mins",
+      "difficulty": "Hard",
+      "points": 90,
+      "href": "/quiz/mathematics-1"
+    },
+    {
+      "id": "dq4",
+      "title": "English",
+      "category": "English",
+      "questions": 25,
+      "time": "30 mins",
+      "difficulty": "Easy",
+      "points": 50,
+      "href": "/quiz/english-1"
+    },
+    {
+      "id": "dq5",
+      "title": "Reasoning",
+      "category": "Reasoning",
+      "questions": 35,
+      "time": "40 mins",
+      "difficulty": "Medium",
+      "points": 70,
+      "href": "/quiz/reasoning-1"
+    },
+    {
+      "id": "dq6",
+      "title": "Science",
+      "category": "Science",
+      "questions": 28,
+      "time": "35 mins",
+      "difficulty": "Medium",
+      "points": 65,
+      "href": "/quiz/science-1"
+    },
+    {
+      "id": "dq7",
+      "title": "History",
+      "category": "History",
+      "questions": 22,
+      "time": "28 mins",
+      "difficulty": "Easy",
+      "points": 55,
+      "href": "/quiz/history-1"
+    },
+    {
+      "id": "dq8",
+      "title": "Geography",
+      "category": "Geography",
+      "questions": 24,
+      "time": "30 mins",
+      "difficulty": "Medium",
+      "points": 60,
+      "href": "/quiz/geography-1"
+    },
+    {
+      "id": "dq9",
+      "title": "Polity",
+      "category": "Polity",
+      "questions": 26,
+      "time": "32 mins",
+      "difficulty": "Hard",
+      "points": 80,
+      "href": "/quiz/polity-1"
+    },
+    {
+      "id": "dq10",
+      "title": "Economics",
+      "category": "Economics",
+      "questions": 20,
+      "time": "25 mins",
+      "difficulty": "Medium",
+      "points": 60,
+      "href": "/quiz/economics-1"
+    }
+  ],
+  "pagination": {
+    "total": 50,
+    "perPage": 10,
+    "currentPage": 1
+  }
+}

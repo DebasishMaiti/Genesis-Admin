@@ -1,0 +1,69 @@
+{
+  "list": [
+    {
+      "id": "c1",
+      "title": "SSC CGL Elite 2025",
+      "category": "SSC",
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.6,
+      "lessons": 210,
+      "price": 14999,
+      "href": "/course/ssc-cgl-elite-2025"
+    },
+    {
+      "id": "c2",
+      "title": "CET Foundation (Class 10)",
+      "category": "CET",
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.5,
+      "lessons": 160,
+      "price": 7999,
+      "href": "/course/cet-foundation-10"
+    },
+    {
+      "id": "c3",
+      "title": "Bank PO Master Course",
+      "category": "Banking",
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.7,
+      "lessons": 180,
+      "price": 12999,
+      "href": "/course/bank-po-master"
+    },
+    {
+      "id": "c4",
+      "title": "Insurance Exam Complete",
+      "category": "Insurance",
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.4,
+      "lessons": 150,
+      "price": 9999,
+      "href": "/course/insurance-complete"
+    },
+    {
+      "id": "c5",
+      "title": "Railway NTPC Preparation",
+      "category": "Railways",
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.3,
+      "lessons": 140,
+      "price": 8999,
+      "href": "/course/railway-ntpc"
+    },
+    {
+      "id": "c6",
+      "title": "Defence Exam Mastery",
+      "category": "Defence",
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.5,
+      "lessons": 170,
+      "price": 11999,
+      "href": "/course/defence-mastery"
+    }
+  ],
+  "pagination": { 
+    "page": 1, 
+    "pageSize": 12, 
+    "total": 84 
+  }
+}

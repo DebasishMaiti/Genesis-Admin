@@ -1,0 +1,113 @@
+{
+  "list": [
+    {
+      "id": "c1",
+      "board": "CBSE",
+      "class": "Class 10",
+      "title": "CBSE Class 10",
+      "subjects": ["Mathematics", "Science", "Social Science", "English", "Hindi"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.8,
+      "students": 1250,
+      "teachers": 8,
+      "price": 24999,
+      "href": "/academics/cbse-class-10"
+    },
+    {
+      "id": "c2",
+      "board": "CBSE",
+      "class": "Class 9",
+      "title": "CBSE Class 9",
+      "subjects": ["Mathematics", "Science", "Social Science", "English", "Hindi"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.7,
+      "students": 980,
+      "teachers": 7,
+      "price": 22999,
+      "href": "/academics/cbse-class-9"
+    },
+    {
+      "id": "c3",
+      "board": "CBSE",
+      "class": "Class 12",
+      "title": "CBSE Class 12",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "English", "Computer Science"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.9,
+      "students": 1580,
+      "teachers": 10,
+      "price": 29999,
+      "href": "/academics/cbse-class-12"
+    },
+    {
+      "id": "c4",
+      "board": "ICSE",
+      "class": "Class 10",
+      "title": "ICSE Class 10",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology", "English"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.6,
+      "students": 890,
+      "teachers": 8,
+      "price": 26999,
+      "href": "/academics/icse-class-10"
+    },
+    {
+      "id": "c5",
+      "board": "ICSE",
+      "class": "Class 12",
+      "title": "ICSE Class 12",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "English", "Economics"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.8,
+      "students": 1120,
+      "teachers": 9,
+      "price": 31999,
+      "href": "/academics/icse-class-12"
+    },
+    {
+      "id": "c6",
+      "board": "State Board",
+      "class": "Class 10 - Maharashtra",
+      "title": "Maharashtra Board Class 10",
+      "subjects": ["Mathematics", "Science", "Social Science", "English", "Marathi"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.5,
+      "students": 750,
+      "teachers": 6,
+      "price": 19999,
+      "href": "/academics/maharashtra-class-10"
+    },
+    {
+      "id": "c7",
+      "board": "CBSE",
+      "class": "Class 11",
+      "title": "CBSE Class 11",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "English", "Computer Science"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.7,
+      "students": 1340,
+      "teachers": 9,
+      "price": 27999,
+      "href": "/academics/cbse-class-11"
+    },
+    {
+      "id": "c8",
+      "board": "CBSE",
+      "class": "Class 8",
+      "title": "CBSE Class 8",
+      "subjects": ["Mathematics", "Science", "Social Science", "English", "Hindi"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.6,
+      "students": 820,
+      "teachers": 6,
+      "price": 19999,
+      "href": "/academics/cbse-class-8"
+    }
+  ],
+  "pagination": { 
+    "page": 1, 
+    "pageSize": 12, 
+    "total": 48 
+  }
+}

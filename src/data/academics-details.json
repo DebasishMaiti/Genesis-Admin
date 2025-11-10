@@ -1,0 +1,761 @@
+{
+  "cbse-class-10": {
+    "id": "c1",
+    "slug": "cbse-class-10",
+    "board": "CBSE",
+    "class": "Class 10",
+    "title": "CBSE Class 10",
+    "description": "Comprehensive course covering all CBSE Class 10 subjects with live classes, expert teachers, and complete study materials.",
+    "rating": 4.8,
+    "students": 1250,
+    "teachers": 8,
+    "price": 24999,
+    "validityDays": 365,
+    "subjects": [
+      {
+        "id": "math",
+        "name": "Mathematics",
+        "icon": "Calculator",
+        "totalChapters": 5,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch1",
+            "title": "Real Numbers",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls1",
+                "title": "Introduction to Real Numbers",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-15",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 450,
+                "isFree": true
+              },
+              {
+                "id": "cls2",
+                "title": "Euclid's Division Lemma",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-10",
+                  "time": "10:00 AM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/euclid-division.mp4",
+                  "duration": "1:15:30",
+                  "views": 1230
+                },
+                "enrolledStudents": 450
+              },
+              {
+                "id": "cls3",
+                "title": "Fundamental Theorem of Arithmetic",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-17",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 445
+              },
+              {
+                "id": "cls4",
+                "title": "HCF and LCM Applications",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-12",
+                  "time": "2:00 PM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/hcf-lcm.mp4",
+                  "duration": "1:28:15",
+                  "views": 980
+                },
+                "enrolledStudents": 442
+              },
+              {
+                "id": "cls5",
+                "title": "Irrational Numbers",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-20",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 438
+              },
+              {
+                "id": "cls6",
+                "title": "Decimal Expansion of Rational Numbers",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-22",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 435
+              },
+              {
+                "id": "cls7",
+                "title": "Practice Problems - Part 1",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-09",
+                  "time": "4:00 PM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/real-numbers-practice1.mp4",
+                  "duration": "1:32:45",
+                  "views": 1105
+                },
+                "enrolledStudents": 432
+              },
+              {
+                "id": "cls8",
+                "title": "Practice Problems - Part 2",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-24",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 428
+              },
+              {
+                "id": "cls9",
+                "title": "NCERT Solutions Discussion",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-26",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 425
+              },
+              {
+                "id": "cls10",
+                "title": "Chapter Review and Revision",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-28",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 420
+              }
+            ]
+          },
+          {
+            "id": "ch2",
+            "title": "Polynomials",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls11",
+                "title": "Introduction to Polynomials",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-30",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 420,
+                "isFree": true
+              },
+              {
+                "id": "cls12",
+                "title": "Degree and Types of Polynomials",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-01",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 418
+              },
+              {
+                "id": "cls13",
+                "title": "Zeros of a Polynomial",
+                "instructor": "Dr. Rajesh Singh",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-03",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 415
+              },
+              {
+                "id": "cls14",
+                "title": "Remainder Theorem",
+                "instructor": "Dr. Rajesh Singh",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-05",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 412
+              },
+              {
+                "id": "cls15",
+                "title": "Factor Theorem",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-07",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 410
+              },
+              {
+                "id": "cls16",
+                "title": "Factorization of Polynomials",
+                "instructor": "Dr. Rajesh Singh",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-09",
+                  "time": "4:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 408
+              },
+              {
+                "id": "cls17",
+                "title": "Algebraic Identities",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-11",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 405
+              },
+              {
+                "id": "cls18",
+                "title": "Division Algorithm for Polynomials",
+                "instructor": "Dr. Rajesh Singh",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-13",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 402
+              },
+              {
+                "id": "cls19",
+                "title": "Practice Problems",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-15",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 400
+              },
+              {
+                "id": "cls20",
+                "title": "Chapter Review and Test",
+                "instructor": "Dr. Rajesh Singh",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-17",
+                  "time": "5:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 398
+              }
+            ]
+          },
+          {
+            "id": "ch3",
+            "title": "Pair of Linear Equations in Two Variables",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls21",
+                "title": "Introduction to Linear Equations",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-08",
+                  "time": "9:00 AM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/linear-equations-intro.mp4",
+                  "duration": "58:20",
+                  "views": 1450
+                },
+                "enrolledStudents": 465,
+                "isFree": true
+              },
+              {
+                "id": "cls22",
+                "title": "Graphical Method of Solution",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-11",
+                  "time": "10:00 AM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/graphical-method.mp4",
+                  "duration": "1:18:35",
+                  "views": 1320
+                },
+                "enrolledStudents": 462
+              },
+              {
+                "id": "cls23",
+                "title": "Substitution Method",
+                "instructor": "Prof. Meera Patel",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-16",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 458
+              },
+              {
+                "id": "cls24",
+                "title": "Elimination Method",
+                "instructor": "Prof. Meera Patel",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-18",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 455
+              },
+              {
+                "id": "cls25",
+                "title": "Cross-Multiplication Method",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-21",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 452
+              },
+              {
+                "id": "cls26",
+                "title": "Equations Reducible to Linear Form",
+                "instructor": "Prof. Meera Patel",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-23",
+                  "time": "4:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 448
+              },
+              {
+                "id": "cls27",
+                "title": "Word Problems - Part 1",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-25",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 445
+              },
+              {
+                "id": "cls28",
+                "title": "Word Problems - Part 2",
+                "instructor": "Prof. Meera Patel",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-27",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 442
+              },
+              {
+                "id": "cls29",
+                "title": "Practice Session",
+                "instructor": "Dr. Amit Kumar",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-29",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 438
+              },
+              {
+                "id": "cls30",
+                "title": "Chapter Test and Discussion",
+                "instructor": "Prof. Meera Patel",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-31",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 435
+              }
+            ]
+          },
+          {
+            "id": "ch4",
+            "title": "Quadratic Equations",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls31",
+                "title": "Introduction to Quadratic Equations",
+                "instructor": "Dr. Vikram Gupta",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-02",
+                  "time": "9:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 432,
+                "isFree": true
+              },
+              {
+                "id": "cls32",
+                "title": "Standard Form and Roots",
+                "instructor": "Dr. Vikram Gupta",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-04",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 430
+              },
+              {
+                "id": "cls33",
+                "title": "Solving by Factorization",
+                "instructor": "Dr. Vikram Gupta",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-06",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 428
+              },
+              {
+                "id": "cls34",
+                "title": "Completing the Square Method",
+                "instructor": "Prof. Anjali Mehta",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-08",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 425
+              },
+              {
+                "id": "cls35",
+                "title": "Quadratic Formula",
+                "instructor": "Prof. Anjali Mehta",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-11-10",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 422
+              },
+              {
+                "id": "cls36",
+                "title": "Nature of Roots - Discriminant",
+                "instructor": "Dr. Vikram Gupta",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-12",
+                  "time": "4:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 420
+              },
+              {
+                "id": "cls37",
+                "title": "Relationship between Roots and Coefficients",
+                "instructor": "Prof. Anjali Mehta",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-11-14",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 418
+              },
+              {
+                "id": "cls38",
+                "title": "Word Problems on Quadratic Equations",
+                "instructor": "Dr. Vikram Gupta",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-16",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 415
+              },
+              {
+                "id": "cls39",
+                "title": "Advanced Practice Problems",
+                "instructor": "Prof. Anjali Mehta",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-18",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 412
+              },
+              {
+                "id": "cls40",
+                "title": "Chapter Review and Mock Test",
+                "instructor": "Dr. Vikram Gupta",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-11-20",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 410
+              }
+            ]
+          },
+          {
+            "id": "ch5",
+            "title": "Arithmetic Progressions",
+            "totalClasses": 10,
+            "classes": [
+              {
+                "id": "cls41",
+                "title": "Introduction to Sequences and Series",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-07",
+                  "time": "9:00 AM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/sequences-intro.mp4",
+                  "duration": "1:02:15",
+                  "views": 1580
+                },
+                "enrolledStudents": 470,
+                "isFree": true
+              },
+              {
+                "id": "cls42",
+                "title": "Understanding Arithmetic Progression",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-09",
+                  "time": "10:00 AM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/ap-basics.mp4",
+                  "duration": "1:12:40",
+                  "views": 1420
+                },
+                "enrolledStudents": 468
+              },
+              {
+                "id": "cls43",
+                "title": "nth Term of an AP",
+                "instructor": "Dr. Karan Desai",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-14",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 465
+              },
+              {
+                "id": "cls44",
+                "title": "Sum of First n Terms",
+                "instructor": "Dr. Karan Desai",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-16",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 462
+              },
+              {
+                "id": "cls45",
+                "title": "Sum Formula Derivation",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-19",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 460
+              },
+              {
+                "id": "cls46",
+                "title": "Finding Number of Terms",
+                "instructor": "Dr. Karan Desai",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-21",
+                  "time": "4:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 458
+              },
+              {
+                "id": "cls47",
+                "title": "Word Problems on AP",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 75,
+                "liveSchedule": {
+                  "date": "2025-10-23",
+                  "time": "10:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 455
+              },
+              {
+                "id": "cls48",
+                "title": "Real-life Applications of AP",
+                "instructor": "Dr. Karan Desai",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-25",
+                  "time": "2:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 452
+              },
+              {
+                "id": "cls49",
+                "title": "Practice Session with Tricks",
+                "instructor": "Prof. Sneha Sharma",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-28",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 450
+              },
+              {
+                "id": "cls50",
+                "title": "Chapter Test and Solutions",
+                "instructor": "Dr. Karan Desai",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-30",
+                  "time": "3:00 PM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 448
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "science",
+        "name": "Science",
+        "icon": "Microscope",
+        "totalChapters": 16,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch3",
+            "name": "Chemical Reactions and Equations",
+            "classes": [
+              {
+                "id": "cls4",
+                "title": "Types of Chemical Reactions",
+                "instructor": "Dr. Priya Patel",
+                "duration": 90,
+                "liveSchedule": {
+                  "date": "2025-10-18",
+                  "time": "11:00 AM",
+                  "status": "upcoming"
+                },
+                "enrolledStudents": 480,
+                "isFree": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "name": "Social Science",
+        "icon": "Globe",
+        "totalChapters": 12,
+        "completedChapters": 0,
+        "chapters": [
+          {
+            "id": "ch4",
+            "name": "The Rise of Nationalism in Europe",
+            "classes": [
+              {
+                "id": "cls5",
+                "title": "French Revolution and Nationalism",
+                "instructor": "Mr. Rajesh Verma",
+                "duration": 60,
+                "liveSchedule": {
+                  "date": "2025-10-08",
+                  "time": "3:00 PM",
+                  "status": "completed"
+                },
+                "recordedVideo": {
+                  "url": "/videos/french-revolution.mp4",
+                  "duration": "58:45",
+                  "views": 890
+                },
+                "enrolledStudents": 410
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "hero": {
+    "heading": "Master Your Knowledge. Excel in Competitive Exams.",
+    "subheading": "Redefined prep courses powered by expert mentors.",
+    "ctaPrimary": { "label": "Explore Courses", "href": "/courses" },
+    "ctaSecondary": { "label": "Download Brochure", "href": "/assets/brochure.pdf" },
+    "bgImage": "/src/assets/hero-bg.jpg"
+  },
+  "updates": {
+    "items": [
+      {
+        "id": "u1",
+        "title": "SSC CGL 2025 Notification Released - Apply Now",
+        "dateISO": "2025-09-10",
+        "link": "/updates/ssc-cgl-2025",
+        "pdf": "/pdfs/ssc-cgl-2025.pdf"
+      },
+      {
+        "id": "u2",
+        "title": "Bank PO Free Mock Test Released",
+        "dateISO": "2025-09-12",
+        "link": "/updates/bank-po-mock"
+      },
+      {
+        "id": "u3",
+        "title": "CET 2025 Registration Opens Tomorrow",
+        "dateISO": "2025-09-08",
+        "link": "/updates/cet-2025"
+      },
+      {
+        "id": "u4",
+        "title": "New Insurance Exam Pattern Update",
+        "dateISO": "2025-09-05",
+        "link": "/updates/insurance-pattern"
+      }
+    ],
+    "viewAllHref": "/updates"
+  },
+  "categories": [
+    { "key": "cet", "label": "CET", "icon": "/src/assets/logo.png", "href": "/courses/cet" },
+    { "key": "banking", "label": "Banking", "icon": "/src/assets/logo.png", "href": "/courses/banking" },
+    { "key": "insurance", "label": "Insurance", "icon": "/src/assets/logo.png", "href": "/courses/insurance" },
+    { "key": "ssc", "label": "SSC", "icon": "/src/assets/logo.png", "href": "/courses/ssc" },
+    { "key": "railways", "label": "Railways", "icon": "/src/assets/logo.png", "href": "/courses/railways" },
+    { "key": "defence", "label": "Defence", "icon": "/src/assets/logo.png", "href": "/courses/defence" },
+    { "key": "teaching", "label": "Teaching", "icon": "/src/assets/logo.png", "href": "/courses/teaching" },
+    { "key": "mba", "label": "MBA", "icon": "/src/assets/logo.png", "href": "/courses/mba" }
+  ],
+  "popularCourses": [
+    {
+      "id": "c1",
+      "title": "SSC CGL Elite 2025",
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "href": "/course/ssc-cgl-elite-2025",
+      "price": 14999,
+      "category": "SSC",
+      "rating": 4.6,
+      "lessons": 210
+    },
+    {
+      "id": "c2",
+      "title": "Bank PO Master 2025",
+      "thumb": "/src/assets/bank-po.jpg",
+      "href": "/course/bank-po-master-2025",
+      "price": 12999,
+      "category": "Banking",
+      "rating": 4.5,
+      "lessons": 180
+    },
+    {
+      "id": "c3",
+      "title": "CET Foundation Complete",
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "href": "/course/cet-foundation-complete",
+      "price": 8999,
+      "category": "CET",
+      "rating": 4.4,
+      "lessons": 150
+    },
+    {
+      "id": "c4",
+      "title": "Insurance Exam Mastery",
+      "thumb": "/src/assets/bank-po.jpg",
+      "href": "/course/insurance-exam-mastery",
+      "price": 9999,
+      "category": "Insurance",
+      "rating": 4.3,
+      "lessons": 120
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "title": "Opening Ceremony 2025",
+      "dateISO": "2025-10-02",
+      "desc": "New session launch with special guest speakers",
+      "href": "/events/opening-ceremony"
+    },
+    {
+      "id": "e2",
+      "title": "Bank PO Strategy Webinar",
+      "dateISO": "2025-09-25",
+      "desc": "Expert strategies for banking exam preparation",
+      "href": "/events/bank-po-webinar"
+    },
+    {
+      "id": "e3",
+      "title": "SSC Success Workshop",
+      "dateISO": "2025-09-20",
+      "desc": "Interactive workshop on SSC exam techniques",
+      "href": "/events/ssc-workshop"
+    }
+  ],
+  "enquiry": {
+    "heading": "Get Expert Guidance",
+    "fields": ["name", "email", "phone", "courseOfInterest"],
+    "submitLabel": "Submit & Get Guidance",
+    "submitHref": "/api/lead"
+  },
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "Aditi Sharma",
+      "avatar": "/src/assets/avatar1.jpg",
+      "text": "Clear, focused preparation with excellent mock tests. The mentors made all the difference in my success."
+    },
+    {
+      "id": "t2",
+      "name": "Rahul Kumar",
+      "avatar": "/src/assets/avatar2.jpg",
+      "text": "The structured approach and personalized guidance helped me crack the bank PO exam on my first attempt."
+    },
+    {
+      "id": "t3",
+      "name": "Priya Patel",
+      "avatar": "/src/assets/avatar1.jpg",
+      "text": "Genesis Education's comprehensive test series and expert faculty are simply the best in the market."
+    }
+  ],
+  "popularTuition": [
+    {
+      "id": "t1",
+      "board": "CBSE",
+      "class": "Class 10",
+      "title": "CBSE Class 10",
+      "subjects": ["Mathematics", "Science", "Social Science", "English"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.8,
+      "students": 1250,
+      "teachers": 8,
+      "price": 24999,
+      "href": "/academics/cbse-class-10"
+    },
+    {
+      "id": "t2",
+      "board": "ICSE",
+      "class": "Class 12",
+      "title": "ICSE Class 12",
+      "subjects": ["Physics", "Chemistry", "Mathematics", "English"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.7,
+      "students": 1120,
+      "teachers": 9,
+      "price": 31999,
+      "href": "/academics/icse-class-12"
+    },
+    {
+      "id": "t3",
+      "board": "State Board",
+      "class": "Class 8 - Maharashtra",
+      "title": "Maharashtra Board Class 8",
+      "subjects": ["English", "Mathematics", "Science", "Marathi"],
+      "thumb": "/src/assets/ssc-cgl.jpg",
+      "rating": 4.6,
+      "students": 820,
+      "teachers": 6,
+      "price": 19999,
+      "href": "/academics/maharashtra-class-8"
+    },
+    {
+      "id": "t4",
+      "board": "CBSE",
+      "class": "Class 11",
+      "title": "CBSE Class 11",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "Computer Science"],
+      "thumb": "/src/assets/bank-po.jpg",
+      "rating": 4.9,
+      "students": 1340,
+      "teachers": 9,
+      "price": 27999,
+      "href": "/academics/cbse-class-11"
+    }
+  ],
+  "ctaBanner": {
+    "heading": "Get weekly study tips in your inbox",
+    "inputPlaceholder": "Enter your email",
+    "buttonLabel": "Subscribe",
+    "submitHref": "/api/subscribe"
+  }
+}
