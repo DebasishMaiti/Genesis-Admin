@@ -24,9 +24,9 @@ import {
   Search,
   Filter,
   Plus,
-  FileText,
-  Users,
-  BarChart3,
+  // FileText,
+  // Users,
+  // BarChart3,
   Eye,
   Edit
 } from "lucide-react";
@@ -50,7 +50,6 @@ export default function AdminMcq() {
   const [searchTerm, setSearchTerm] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [statusFilter, setStatusFilter] = useState('all');
-  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -110,7 +109,6 @@ export default function AdminMcq() {
     ];
 
     setSeries(mockData);
-    setLoading(false);
   }, []);
 
   const filteredSeries = series.filter(s => {
@@ -122,9 +120,9 @@ export default function AdminMcq() {
     return matchesSearch && matchesCategory && matchesStatus;
   });
 
-  const totalMCQs = series.reduce((sum, s) => sum + s.mcqCount, 0);
-  const publishedSeries = series.filter(s => s.status === 'published').length;
-  const draftSeries = series.filter(s => s.status === 'draft').length;
+  // const totalMCQs = series.reduce((sum, s) => sum + s.mcqCount, 0);
+  // const publishedSeries = series.filter(s => s.status === 'published').length;
+  // const draftSeries = series.filter(s => s.status === 'draft').length;
 
   const getStatusBadge = (status: string) => {
     const variants = {
@@ -150,24 +148,7 @@ export default function AdminMcq() {
     };
     return colors[category] || 'bg-gray-100 text-gray-800';
   };
-
-  if (loading) {
-    return (
-      <Layout>
-        <div className="container mx-auto p-4">
-          <div className="animate-pulse">
-            <div className="h-8 bg-gray-200 rounded w-1/4 mb-4"></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-              {[...Array(3)].map((_, i) => (
-                <div key={i} className="h-32 bg-gray-200 rounded"></div>
-              ))}
-            </div>
-            <div className="h-64 bg-gray-200 rounded"></div>
-          </div>
-        </div>
-      </Layout>
-    );
-  }
+ 
 
   return (
     <Layout>
@@ -175,9 +156,6 @@ export default function AdminMcq() {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">MCQ Management</h1>
-            <p className="text-muted-foreground">
-              Manage all your MCQ series and questions
-            </p>
           </div>
           <Button className="flex items-center gap-2" onClick={() => navigate('/mcq-add')}>
             <Plus className="h-4 w-4" />
@@ -185,7 +163,7 @@ export default function AdminMcq() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Total MCQs</CardTitle>
@@ -218,7 +196,7 @@ export default function AdminMcq() {
               <p className="text-xs text-muted-foreground">In progress</p>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
 
         <Card>
           <CardHeader>

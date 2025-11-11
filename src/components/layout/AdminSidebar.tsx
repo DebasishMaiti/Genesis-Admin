@@ -38,12 +38,13 @@ export function AdminSidebar() {
       to: "/dashboard",
     },
     {
-      label: "Courses",
+      label: "Prof. Courses",
       icon: GraduationCap,
       to: "/admin/courses",
       submenu: [
         { label: "Course List", to: "/course", icon: ListChecks },
         { label: "Add Course", to: "/course-add", icon: Plus },
+        { label: "Add Subject", to: "/course-subject", icon: Plus },
       ],
     },
     {

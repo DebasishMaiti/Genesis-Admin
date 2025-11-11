@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -514,45 +513,7 @@ export default function AdminEditCourse() {
                     readOnly={!isEditMode}
                   />
                 </div>
-
-                <div>
-                  <Label htmlFor="board" className="text-sm font-medium">Board</Label>
-                  {isEditMode ? (
-                    <Select value={formData.board} onValueChange={(v) => updateBasicInfo('board', v)}>
-                      <SelectTrigger className="mt-1">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="CBSE">CBSE</SelectItem>
-                        <SelectItem value="ICSE">ICSE</SelectItem>
-                        <SelectItem value="Language">Language</SelectItem>
-                        <SelectItem value="Professional">Professional</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  ) : (
-                    <Input value={formData.board} readOnly className="mt-1" />
-                  )}
-                </div>
-
-                <div>
-                  <Label htmlFor="class" className="text-sm font-medium">Class</Label>
-                  {isEditMode ? (
-                    <Select value={formData.class} onValueChange={(v) => updateBasicInfo('class', v)}>
-                      <SelectTrigger className="mt-1">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="Professional">Professional</SelectItem>
-                        <SelectItem value="Class 1">Class 1</SelectItem>
-                        <SelectItem value="Class 10">Class 10</SelectItem>
-                        <SelectItem value="Class 12">Class 12</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  ) : (
-                    <Input value={formData.class} readOnly className="mt-1" />
-                  )}
-                </div>
-
+ 
                 <div className="lg:col-span-2">
                   <Label htmlFor="description" className="text-sm font-medium">Description</Label>
                   <Textarea
@@ -593,29 +554,6 @@ export default function AdminEditCourse() {
                       readOnly={!isEditMode}
                     />
                   </div>
-                </div>
-
-                <div>
-                  <Label className="text-sm font-medium">Rating</Label>
-                  <Input 
-                    type="number" 
-                    step="0.1" 
-                    value={formData.rating} 
-                    onChange={(e) => updateBasicInfo('rating', Number(e.target.value))} 
-                    className="mt-1"
-                    readOnly={!isEditMode}
-                  />
-                </div>
-
-                <div>
-                  <Label className="text-sm font-medium">Students</Label>
-                  <Input 
-                    type="number" 
-                    value={formData.students} 
-                    onChange={(e) => updateBasicInfo('students', Number(e.target.value))} 
-                    className="mt-1"
-                    readOnly={!isEditMode}
-                  />
                 </div>
 
                 <div>

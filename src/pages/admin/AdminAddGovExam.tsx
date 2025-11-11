@@ -76,22 +76,22 @@ export default function AdminAddGovExam() {
     });
   };
  
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (files) {
-      setExamFormData((prev) => ({
-        ...prev,
-        studyMaterials: [...prev.studyMaterials, ...Array.from(files)],  
-      }));
-    }
-  };
+  // const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const files = e.target.files;
+  //   if (files) {
+  //     setExamFormData((prev) => ({
+  //       ...prev,
+  //       studyMaterials: [...prev.studyMaterials, ...Array.from(files)],  
+  //     }));
+  //   }
+  // };
  
-  const removeFile = (fileName: string) => {
-    setExamFormData((prev) => ({
-      ...prev,
-      studyMaterials: prev.studyMaterials.filter((file) => file.name !== fileName),
-    }));
-  };
+  // const removeFile = (fileName: string) => {
+  //   setExamFormData((prev) => ({
+  //     ...prev,
+  //     studyMaterials: prev.studyMaterials.filter((file) => file.name !== fileName),
+  //   }));
+  // };
  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -241,7 +241,7 @@ export default function AdminAddGovExam() {
                   )}
                 </div>
 
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <Label htmlFor="studyMaterials" className="text-sm font-semibold text-gray-700">
                     Study Materials
                   </Label>
@@ -272,7 +272,7 @@ export default function AdminAddGovExam() {
                       ))}
                     </div>
                   )}
-                </div>
+                </div> */}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">

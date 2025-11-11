@@ -26,7 +26,7 @@ interface Chapter {
 interface Subject {
   id: string;
   name: string;
-  icon: string;
+ 
   chapters: Chapter[];
 }
 
@@ -54,7 +54,7 @@ const mockData: Board[] = [
           {
             id: 'sub-1',
             name: 'Mathematics',
-            icon: 'Calculator',
+ 
             chapters: [
               {
                 id: 'ch-1',
@@ -97,7 +97,7 @@ const mockData: Board[] = [
           {
             id: 'sub-2',
             name: 'Science',
-            icon: 'Microscope',
+ 
             chapters: [
               {
                 id: 'ch-3',
@@ -181,7 +181,7 @@ export default function AdminAddAcademics() {
     const newSubject: Subject = {
       id: `sub-${Date.now()}`,
       name: subjectName.trim(),
-      icon: 'Book',
+   
       chapters: []
     };
     setBoards(boards.map(b =>
@@ -359,7 +359,6 @@ export default function AdminAddAcademics() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900">Course Builder</h1>
-              <p className="text-gray-600 mt-1">Build structured courses: Board → Class → Subject → Chapter → Class</p>
             </div>
 
             <Dialog open={openBoardDialog} onOpenChange={setOpenBoardDialog}>
@@ -528,7 +527,7 @@ export default function AdminAddAcademics() {
                                         <CardHeader className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white py-3">
                                           <div className="flex justify-between items-center">
                                             <div className="flex items-center gap-2">
-                                              <div className="text-2xl">{subject.icon}</div>
+                                               
                                               <div>
                                                 <CardTitle className="text-lg">{subject.name}</CardTitle>
                                                 <p className="text-xs opacity-90">{subject.chapters.length} chapters</p>

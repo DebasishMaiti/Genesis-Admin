@@ -25,6 +25,7 @@ import CourseBuilderPage from "./pages/admin/CourseBuilderPage";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
 import AdminLogin from "./pages/admin/Login";
 import NotFound from "./pages/admin/NotFound";
+import AdminCreateCourseSubject from "./pages/admin/AdminCreateCourseSubject";
  
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/course" element={<AdminCourse/>}/>
           <Route path="/course-add" element={<AdminAddCourse/>}/>
           <Route path="/course/:id" element={<AdminEditCourse/>}/>
+          <Route path="/course-subject" element={<AdminCreateCourseSubject/>}/>
           <Route path="/gov-exam" element={<AdminGovExam/>}/>
           <Route path="/gov-exam-add" element={<AdminAddGovExam/>}/>
           <Route path="/gov-exam/:id" element={<AdminEditGovExam/>}/>

@@ -11,6 +11,7 @@ import {
   Calculator,
   Microscope,
   Globe,
+  Edit2,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -208,9 +209,11 @@ export default function AdminEditAcademics() {
   const navigate = useNavigate();
   const location = useLocation();
   const passedClass = location.state?.classData as TuitionClass | undefined;
+  const initialViewMode = location.state?.viewMode ?? false;
 
   const [currentClass, setCurrentClass] = useState<TuitionClass | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [viewMode, setViewMode] = useState(initialViewMode);
 
   const [openSubjectDialog, setOpenSubjectDialog] = useState(false);
   const [openChapterDialog, setOpenChapterDialog] = useState(false);
@@ -436,6 +439,10 @@ export default function AdminEditAcademics() {
     navigate('/academics');
   };
 
+  const toggleViewMode = () => {
+    setViewMode(!viewMode);
+  };
+
   if (isLoading) {
     return (
       <Layout>
@@ -483,15 +490,33 @@ export default function AdminEditAcademics() {
                 Back
               </Button>
               <div>
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900">Edit Class</h1>
-                <p className="text-gray-600 mt-1">Manage subjects, chapters, and tuition classes</p>
+                <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+                  {viewMode ? 'View Class' : 'Edit Class'}
+                </h1>
+                <p className="text-gray-600 mt-1">
+                  {viewMode 
+                    ? 'View subjects, chapters, and tuition class details' 
+                    : 'Manage subjects, chapters, and tuition classes'}
+                </p>
               </div>
             </div>
 
-            <Button onClick={handleSave} className="flex items-center gap-2 bg-green-600 hover:bg-green-700">
-              <Save className="w-4 h-4" />
-              Save Changes
-            </Button>
+            <div className="flex gap-2">
+              <Button 
+                onClick={toggleViewMode} 
+                variant="outline"
+                className="flex items-center gap-2"
+              >
+                <Edit2 className="w-4 h-4" />
+                {viewMode ? 'Switch to Edit Mode' : 'Switch to View Mode'}
+              </Button>
+              {!viewMode && (
+                <Button onClick={handleSave} className="flex items-center gap-2 bg-green-600 hover:bg-green-700">
+                  <Save className="w-4 h-4" />
+                  Save Changes
+                </Button>
+              )}
+            </div>
           </div>
 
           <Card className="mb-8">
@@ -502,25 +527,30 @@ export default function AdminEditAcademics() {
               </CardTitle>
             </CardHeader>
             <CardContent className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
+              <div className="space-y-4">
                 <div>
-                  <Label className="text-gray-500">Rating</Label>
-                  <p className="font-semibold text-lg flex items-center gap-1">
-                   
-                    {currentClass.rating}
-                  </p>
+                  <Label className="text-gray-500">Description</Label>
+                  <p className="text-gray-700 mt-1">{currentClass.description}</p>
                 </div>
-                <div>
-                  <Label className="text-gray-500">Students</Label>
-                  <p className="font-semibold text-lg">{currentClass.students}</p>
-                </div>
-                <div>
-                  <Label className="text-gray-500">Teachers</Label>
-                  <p className="font-semibold text-lg">{currentClass.teachers}</p>
-                </div>
-                <div>
-                  <Label className="text-gray-500">Price</Label>
-                  <p className="font-semibold text-lg">₹{currentClass.price.toLocaleString()}</p>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
+                  <div>
+                    <Label className="text-gray-500">Rating</Label>
+                    <p className="font-semibold text-lg flex items-center gap-1">
+                      ⭐ {currentClass.rating}
+                    </p>
+                  </div>
+                  <div>
+                    <Label className="text-gray-500">Students</Label>
+                    <p className="font-semibold text-lg">{currentClass.students}</p>
+                  </div>
+                  <div>
+                    <Label className="text-gray-500">Teachers</Label>
+                    <p className="font-semibold text-lg">{currentClass.teachers}</p>
+                  </div>
+                  <div>
+                    <Label className="text-gray-500">Price</Label>
+                    <p className="font-semibold text-lg">₹{currentClass.price.toLocaleString()}</p>
+                  </div>
                 </div>
               </div>
             </CardContent>
@@ -529,31 +559,33 @@ export default function AdminEditAcademics() {
           <div className="space-y-6">
             <div className="flex justify-between items-center">
               <h2 className="text-2xl font-bold text-gray-900">Subjects</h2>
-              <Dialog open={openSubjectDialog} onOpenChange={setOpenSubjectDialog}>
-                <DialogTrigger asChild>
-                  <Button className="flex items-center gap-2">
-                    <Plus className="w-4 h-4" />
-                    Add Subject
-                  </Button>
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle>Add New Subject</DialogTitle>
-                  </DialogHeader>
-                  <div className="mt-4">
-                    <Label>Subject Name</Label>
-                    <Input
-                      value={subjectName}
-                      onChange={(e) => setSubjectName(e.target.value)}
-                      placeholder="e.g., Mathematics"
-                      onKeyDown={(e) => e.key === 'Enter' && addSubject()}
-                    />
-                    <Button onClick={addSubject} className="w-full mt-4">
-                      Create Subject
+              {!viewMode && (
+                <Dialog open={openSubjectDialog} onOpenChange={setOpenSubjectDialog}>
+                  <DialogTrigger asChild>
+                    <Button className="flex items-center gap-2">
+                      <Plus className="w-4 h-4" />
+                      Add Subject
                     </Button>
-                  </div>
-                </DialogContent>
-              </Dialog>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Add New Subject</DialogTitle>
+                    </DialogHeader>
+                    <div className="mt-4">
+                      <Label>Subject Name</Label>
+                      <Input
+                        value={subjectName}
+                        onChange={(e) => setSubjectName(e.target.value)}
+                        placeholder="e.g., Mathematics"
+                        onKeyDown={(e) => e.key === 'Enter' && addSubject()}
+                      />
+                      <Button onClick={addSubject} className="w-full mt-4">
+                        Create Subject
+                      </Button>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              )}
             </div>
 
             {currentClass.subjects.length === 0 ? (
@@ -561,7 +593,9 @@ export default function AdminEditAcademics() {
                 <CardContent className="flex flex-col items-center justify-center py-16 text-center">
                   <BookOpen className="w-16 h-16 text-gray-400 mb-4" />
                   <h3 className="text-lg font-semibold text-gray-700">No subjects yet</h3>
-                  <p className="text-gray-500 mt-1">Start by adding a subject</p>
+                  <p className="text-gray-500 mt-1">
+                    {viewMode ? 'No subjects have been added to this class' : 'Start by adding a subject'}
+                  </p>
                 </CardContent>
               </Card>
             ) : (
@@ -575,70 +609,74 @@ export default function AdminEditAcademics() {
                           <span className="font-semibold text-lg">{subject.name}</span>
                           <Badge variant="secondary">{subject.chapters.length} chapters</Badge>
                         </div>
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          className="h-8 w-8 text-red-600 hover:text-red-700 hover:bg-red-50"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            deleteSubject(subject.id);
-                          }}
-                        >
-                          <Trash2 className="w-4 h-4" />
-                        </Button>
+                        {!viewMode && (
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-8 w-8 text-red-600 hover:text-red-700 hover:bg-red-50"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              deleteSubject(subject.id);
+                            }}
+                          >
+                            <Trash2 className="w-4 h-4" />
+                          </Button>
+                        )}
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
                       <div className="space-y-4">
                         <div className="flex justify-between items-center">
                           <h4 className="text-lg font-semibold text-gray-900">Chapters</h4>
-                          <Dialog
-                            open={openChapterDialog && selectedSubjectId === subject.id}
-                            onOpenChange={(open) => {
-                              if (!open) setSelectedSubjectId(null);
-                              setOpenChapterDialog(open);
-                            }}
-                          >
-                            <DialogTrigger asChild>
-                              <Button
-                                size="sm"
-                                variant="outline"
-                                onClick={() => {
-                                  setSelectedSubjectId(subject.id);
-                                  setOpenChapterDialog(true);
-                                }}
-                              >
-                                <Plus className="w-4 h-4 mr-1" /> Add Chapter
-                              </Button>
-                            </DialogTrigger>
-                            <DialogContent>
-                              <DialogHeader>
-                                <DialogTitle>Add Chapter to {subject.name}</DialogTitle>
-                              </DialogHeader>
-                              <div className="mt-4 space-y-4">
-                                <div>
-                                  <Label>Chapter Title</Label>
-                                  <Input
-                                    value={chapterTitle}
-                                    onChange={(e) => setChapterTitle(e.target.value)}
-                                    placeholder="e.g., Real Numbers"
-                                  />
-                                </div>
-                                <div>
-                                  <Label>Total Planned Classes</Label>
-                                  <Input
-                                    type="number"
-                                    value={totalClasses}
-                                    onChange={(e) => setTotalClasses(parseInt(e.target.value) || 1)}
-                                    min="1"
-                                  />
-                                </div>
-                                <Button onClick={addChapter} className="w-full">
-                                  Create Chapter
+                          {!viewMode && (
+                            <Dialog
+                              open={openChapterDialog && selectedSubjectId === subject.id}
+                              onOpenChange={(open) => {
+                                if (!open) setSelectedSubjectId(null);
+                                setOpenChapterDialog(open);
+                              }}
+                            >
+                              <DialogTrigger asChild>
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  onClick={() => {
+                                    setSelectedSubjectId(subject.id);
+                                    setOpenChapterDialog(true);
+                                  }}
+                                >
+                                  <Plus className="w-4 h-4 mr-1" /> Add Chapter
                                 </Button>
-                              </div>
-                            </DialogContent>
-                          </Dialog>
+                              </DialogTrigger>
+                              <DialogContent>
+                                <DialogHeader>
+                                  <DialogTitle>Add Chapter to {subject.name}</DialogTitle>
+                                </DialogHeader>
+                                <div className="mt-4 space-y-4">
+                                  <div>
+                                    <Label>Chapter Title</Label>
+                                    <Input
+                                      value={chapterTitle}
+                                      onChange={(e) => setChapterTitle(e.target.value)}
+                                      placeholder="e.g., Real Numbers"
+                                    />
+                                  </div>
+                                  <div>
+                                    <Label>Total Planned Classes</Label>
+                                    <Input
+                                      type="number"
+                                      value={totalClasses}
+                                      onChange={(e) => setTotalClasses(parseInt(e.target.value) || 1)}
+                                      min="1"
+                                    />
+                                  </div>
+                                  <Button onClick={addChapter} className="w-full">
+                                    Create Chapter
+                                  </Button>
+                                </div>
+                              </DialogContent>
+                            </Dialog>
+                          )}
                         </div>
 
                         {subject.chapters.length === 0 ? (
@@ -660,14 +698,16 @@ export default function AdminEditAcademics() {
                                         </p>
                                       </div>
                                     </div>
-                                    <Button
-                                      variant="ghost"
-                                      size="icon"
-                                      className="h-7 w-7 text-red-600 hover:text-red-700 hover:bg-red-50"
-                                      onClick={() => deleteChapter(subject.id, chapter.id)}
-                                    >
-                                      <Trash2 className="w-3 h-3" />
-                                    </Button>
+                                    {!viewMode && (
+                                      <Button
+                                        variant="ghost"
+                                        size="icon"
+                                        className="h-7 w-7 text-red-600 hover:text-red-700 hover:bg-red-50"
+                                        onClick={() => deleteChapter(subject.id, chapter.id)}
+                                      >
+                                        <Trash2 className="w-3 h-3" />
+                                      </Button>
+                                    )}
                                   </div>
                                 </CardHeader>
                                 <CardContent className="p-0">
@@ -714,161 +754,165 @@ export default function AdminEditAcademics() {
                                                     </span>
                                                   </div>
                                                 </div>
-                                                <Button
-                                                  variant="ghost"
-                                                  size="icon"
-                                                  className="h-7 w-7 text-red-600 hover:text-red-700 hover:bg-red-50"
-                                                  onClick={() =>
-                                                    deleteTuitionClass(subject.id, chapter.id, tClass.id)
-                                                  }
-                                                >
-                                                  <Trash2 className="w-3 h-3" />
-                                                </Button>
+                                                {!viewMode && (
+                                                  <Button
+                                                    variant="ghost"
+                                                    size="icon"
+                                                    className="h-7 w-7 text-red-600 hover:text-red-700 hover:bg-red-50"
+                                                    onClick={() =>
+                                                      deleteTuitionClass(subject.id, chapter.id, tClass.id)
+                                                    }
+                                                  >
+                                                    <Trash2 className="w-3 h-3" />
+                                                  </Button>
+                                                )}
                                               </div>
                                             ))
                                           )}
 
-                                          <Dialog
-                                            open={
-                                              openTuitionClassDialog && selectedChapterId === chapter.id
-                                            }
-                                            onOpenChange={(open) => {
-                                              if (!open) {
-                                                setSelectedChapterId(null);
-                                                setTuitionClassData({
-                                                  title: '',
-                                                  instructor: '',
-                                                  duration: 60,
-                                                  date: '',
-                                                  time: '',
-                                                  isFree: false,
-                                                  enrolledStudents: 0,
-                                                });
+                                          {!viewMode && (
+                                            <Dialog
+                                              open={
+                                                openTuitionClassDialog && selectedChapterId === chapter.id
                                               }
-                                              setOpenTuitionClassDialog(open);
-                                            }}
-                                          >
-                                            <DialogTrigger asChild>
-                                              <Button
-                                                variant="outline"
-                                                size="sm"
-                                                className="w-full"
-                                                onClick={() => {
-                                                  setSelectedChapterId(chapter.id);
-                                                  setOpenTuitionClassDialog(true);
-                                                }}
-                                              >
-                                                <Plus className="w-4 h-4 mr-1" /> Add Tuition Class
-                                              </Button>
-                                            </DialogTrigger>
-                                            <DialogContent className="max-w-md">
-                                              <DialogHeader>
-                                                <DialogTitle>Add Tuition Class</DialogTitle>
-                                              </DialogHeader>
-                                              <div className="space-y-3 mt-4">
-                                                <div>
-                                                  <Label>Class Title *</Label>
-                                                  <Input
-                                                    value={tuitionClassData.title}
-                                                    onChange={(e) =>
-                                                      setTuitionClassData({
-                                                        ...tuitionClassData,
-                                                        title: e.target.value,
-                                                      })
-                                                    }
-                                                    placeholder="e.g., Introduction to Real Numbers"
-                                                  />
-                                                </div>
-                                                <div>
-                                                  <Label>Instructor *</Label>
-                                                  <Input
-                                                    value={tuitionClassData.instructor}
-                                                    onChange={(e) =>
-                                                      setTuitionClassData({
-                                                        ...tuitionClassData,
-                                                        instructor: e.target.value,
-                                                      })
-                                                    }
-                                                    placeholder="e.g., Dr. Amit Kumar"
-                                                  />
-                                                </div>
-                                                <div className="grid grid-cols-2 gap-3">
-                                                  <div>
-                                                    <Label>Duration (min) *</Label>
-                                                    <Input
-                                                      type="number"
-                                                      value={tuitionClassData.duration}
-                                                      onChange={(e) =>
-                                                        setTuitionClassData({
-                                                          ...tuitionClassData,
-                                                          duration: parseInt(e.target.value) || 60,
-                                                        })
-                                                      }
-                                                    />
-                                                  </div>
-                                                  <div>
-                                                    <Label>Enrolled Students</Label>
-                                                    <Input
-                                                      type="number"
-                                                      value={tuitionClassData.enrolledStudents}
-                                                      onChange={(e) =>
-                                                        setTuitionClassData({
-                                                          ...tuitionClassData,
-                                                          enrolledStudents: parseInt(e.target.value) || 0,
-                                                        })
-                                                      }
-                                                    />
-                                                  </div>
-                                                </div>
-                                                <div className="grid grid-cols-2 gap-3">
-                                                  <div>
-                                                    <Label>Date *</Label>
-                                                    <Input
-                                                      type="date"
-                                                      value={tuitionClassData.date}
-                                                      onChange={(e) =>
-                                                        setTuitionClassData({
-                                                          ...tuitionClassData,
-                                                          date: e.target.value,
-                                                        })
-                                                      }
-                                                    />
-                                                  </div>
-                                                  <div>
-                                                    <Label>Time *</Label>
-                                                    <Input
-                                                      type="time"
-                                                      value={tuitionClassData.time}
-                                                      onChange={(e) =>
-                                                        setTuitionClassData({
-                                                          ...tuitionClassData,
-                                                          time: e.target.value,
-                                                        })
-                                                      }
-                                                    />
-                                                  </div>
-                                                </div>
-                                                <div className="flex items-center gap-2">
-                                                  <input
-                                                    type="checkbox"
-                                                    id="isFree"
-                                                    checked={tuitionClassData.isFree}
-                                                    onChange={(e) =>
-                                                      setTuitionClassData({
-                                                        ...tuitionClassData,
-                                                        isFree: e.target.checked,
-                                                      })
-                                                    }
-                                                    className="rounded"
-                                                  />
-                                                  <Label htmlFor="isFree">Free Class</Label>
-                                                </div>
-                                                <Button onClick={addTuitionClass} className="w-full">
-                                                  Add Class
+                                              onOpenChange={(open) => {
+                                                if (!open) {
+                                                  setSelectedChapterId(null);
+                                                  setTuitionClassData({
+                                                    title: '',
+                                                    instructor: '',
+                                                    duration: 60,
+                                                    date: '',
+                                                    time: '',
+                                                    isFree: false,
+                                                    enrolledStudents: 0,
+                                                  });
+                                                }
+                                                setOpenTuitionClassDialog(open);
+                                              }}
+                                            >
+                                              <DialogTrigger asChild>
+                                                <Button
+                                                  variant="outline"
+                                                  size="sm"
+                                                  className="w-full"
+                                                  onClick={() => {
+                                                    setSelectedChapterId(chapter.id);
+                                                    setOpenTuitionClassDialog(true);
+                                                  }}
+                                                >
+                                                  <Plus className="w-4 h-4 mr-1" /> Add Tuition Class
                                                 </Button>
-                                              </div>
-                                            </DialogContent>
-                                          </Dialog>
+                                              </DialogTrigger>
+                                              <DialogContent className="max-w-md">
+                                                <DialogHeader>
+                                                  <DialogTitle>Add Tuition Class</DialogTitle>
+                                                </DialogHeader>
+                                                <div className="space-y-3 mt-4">
+                                                  <div>
+                                                    <Label>Class Title *</Label>
+                                                    <Input
+                                                      value={tuitionClassData.title}
+                                                      onChange={(e) =>
+                                                        setTuitionClassData({
+                                                          ...tuitionClassData,
+                                                          title: e.target.value,
+                                                        })
+                                                      }
+                                                      placeholder="e.g., Introduction to Real Numbers"
+                                                    />
+                                                  </div>
+                                                  <div>
+                                                    <Label>Instructor *</Label>
+                                                    <Input
+                                                      value={tuitionClassData.instructor}
+                                                      onChange={(e) =>
+                                                        setTuitionClassData({
+                                                          ...tuitionClassData,
+                                                          instructor: e.target.value,
+                                                        })
+                                                      }
+                                                      placeholder="e.g., Dr. Amit Kumar"
+                                                    />
+                                                  </div>
+                                                  <div className="grid grid-cols-2 gap-3">
+                                                    <div>
+                                                      <Label>Duration (min) *</Label>
+                                                      <Input
+                                                        type="number"
+                                                        value={tuitionClassData.duration}
+                                                        onChange={(e) =>
+                                                          setTuitionClassData({
+                                                            ...tuitionClassData,
+                                                            duration: parseInt(e.target.value) || 60,
+                                                          })
+                                                        }
+                                                      />
+                                                    </div>
+                                                    <div>
+                                                      <Label>Enrolled Students</Label>
+                                                      <Input
+                                                        type="number"
+                                                        value={tuitionClassData.enrolledStudents}
+                                                        onChange={(e) =>
+                                                          setTuitionClassData({
+                                                            ...tuitionClassData,
+                                                            enrolledStudents: parseInt(e.target.value) || 0,
+                                                          })
+                                                        }
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                  <div className="grid grid-cols-2 gap-3">
+                                                    <div>
+                                                      <Label>Date *</Label>
+                                                      <Input
+                                                        type="date"
+                                                        value={tuitionClassData.date}
+                                                        onChange={(e) =>
+                                                          setTuitionClassData({
+                                                            ...tuitionClassData,
+                                                            date: e.target.value,
+                                                          })
+                                                        }
+                                                      />
+                                                    </div>
+                                                    <div>
+                                                      <Label>Time *</Label>
+                                                      <Input
+                                                        type="time"
+                                                        value={tuitionClassData.time}
+                                                        onChange={(e) =>
+                                                          setTuitionClassData({
+                                                            ...tuitionClassData,
+                                                            time: e.target.value,
+                                                          })
+                                                        }
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                  <div className="flex items-center gap-2">
+                                                    <input
+                                                      type="checkbox"
+                                                      id="isFree"
+                                                      checked={tuitionClassData.isFree}
+                                                      onChange={(e) =>
+                                                        setTuitionClassData({
+                                                          ...tuitionClassData,
+                                                          isFree: e.target.checked,
+                                                        })
+                                                      }
+                                                      className="rounded"
+                                                    />
+                                                    <Label htmlFor="isFree">Free Class</Label>
+                                                  </div>
+                                                  <Button onClick={addTuitionClass} className="w-full">
+                                                    Add Class
+                                                  </Button>
+                                                </div>
+                                              </DialogContent>
+                                            </Dialog>
+                                          )}
                                         </div>
                                       </AccordionContent>
                                     </AccordionItem>
