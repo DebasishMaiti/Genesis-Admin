@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -9,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Plus, Save, BookOpen, DollarSign, Clock, Trash2 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface NewSubjectFormData {
   name: string;
@@ -45,6 +44,8 @@ export default function AdminAddCourse() {
     validityDays: 0,
     subjects: [],
   });
+
+  const navigate = useNavigate()
 
   const [activeStep, setActiveStep] = useState(0);
   const [checkedSubjects, setCheckedSubjects] = useState<Set<string>>(new Set());
@@ -87,6 +88,7 @@ export default function AdminAddCourse() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert("Course created successfully!");
+    navigate("/course")
   };
 
   const steps = [

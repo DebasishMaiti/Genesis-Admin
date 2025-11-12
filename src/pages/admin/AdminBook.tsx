@@ -152,22 +152,7 @@ export default function AdminBook() {
     navigate("/book-add");
   }, [navigate]);
 
-  const sortedBooks = [...books].sort((a, b) => {
-    switch (sortBy) {
-      case "newest":
-        return b.id.localeCompare(a.id);
-      case "popular":
-        return b.rating - a.rating;
-      case "price-low":
-        return a.price - b.price;
-      case "price-high":
-        return b.price - a.price;
-      case "rating":
-        return b.rating - a.rating;
-      default:
-        return 0;
-    }
-  });
+ 
 
   return (
     <Layout>
@@ -218,7 +203,7 @@ export default function AdminBook() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {sortedBooks.map((book) => (
+                {books.map((book) => (
                   <TableRow
                     key={book.id}
                     className="cursor-pointer hover:bg-muted/50 transition-colors"
@@ -314,7 +299,7 @@ export default function AdminBook() {
           </div>
 
           <div className="space-y-4">
-            {sortedBooks.map((book) => (
+            {books.map((book) => (
               <div
                 key={book.id}
                 className="rounded-lg border bg-card p-4 shadow-sm hover:shadow-md transition-shadow"

@@ -26,6 +26,7 @@ import { TooltipProvider } from "@radix-ui/react-tooltip";
 import AdminLogin from "./pages/admin/Login";
 import NotFound from "./pages/admin/NotFound";
 import AdminCreateCourseSubject from "./pages/admin/AdminCreateCourseSubject";
+import AdminAddStudy from "./pages/admin/AdminAddStudyMaterial";
  
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           <Route path="/book/:id" element={<AdminEditBook/>}/>
           <Route path="/mock" element={<AdminMockTest/>}/>
           <Route path="/mock-add/:id" element={<AdminAddMockTest/>}/>
+          <Route path="/study-material-add/:id" element={<AdminAddStudy/>} />
           <Route path="/mock/:id" element={<AdminEditMockTest/>}/>
 
           <Route path="*" element={<NotFound />} />

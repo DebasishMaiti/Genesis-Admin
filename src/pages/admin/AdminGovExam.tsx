@@ -200,9 +200,9 @@ export default function AdminGovExam() {
   };
 
   const handleAddNewExam = () => {
-    navigate('/gov-exam-add');
+    navigate('/gov-exam-add')
   };
-
+                         
   return (
     <Layout>
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 mt-7">

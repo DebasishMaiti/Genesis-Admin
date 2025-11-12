@@ -3,13 +3,12 @@ import { useNavigate } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, Clock, Edit, Eye } from "lucide-react";
+import {Clock, Edit, Eye } from "lucide-react";
 
 interface Course {
   id: number;
   title: string;
   category: string;
-  rating: number;
   lessons: number;
   price: number;
   href: string;
@@ -20,7 +19,7 @@ const courses: Course[] = [
     id: 1,
     title: "Complete SSC CGL Preparation Course",
     category: "SSC",
-    rating: 4.8,
+ 
     lessons: 120,
     price: 4999,
     href: `/user/course/1`,
@@ -29,7 +28,7 @@ const courses: Course[] = [
     id: 2,
     title: "Banking PO & Clerk Exam Masterclass",
     category: "Banking",
-    rating: 4.6,
+ 
     lessons: 95,
     price: 3999,
     href: `/user/course/2`,
@@ -38,7 +37,7 @@ const courses: Course[] = [
     id: 3,
     title: "UPSC Civil Services Foundation",
     category: "UPSC",
-    rating: 4.9,
+
     lessons: 200,
     price: 12999,
     href: `/user/course/3`,
@@ -47,7 +46,6 @@ const courses: Course[] = [
     id: 4,
     title: "Railway Group D Complete Course",
     category: "Railways",
-    rating: 4.5,
     lessons: 80,
     price: 2999,
     href: `/user/course/4`,
@@ -56,7 +54,6 @@ const courses: Course[] = [
     id: 5,
     title: "State PSC Comprehensive Package",
     category: "State PSC",
-    rating: 4.7,
     lessons: 150,
     price: 6999,
     href: `/user/course/5`,
@@ -65,7 +62,6 @@ const courses: Course[] = [
     id: 6,
     title: "Defence Services Preparation Kit",
     category: "Defence",
-    rating: 4.8,
     lessons: 110,
     price: 5499,
     href: `/user/course/6`,
@@ -126,9 +122,6 @@ export default function AdminCourse() {
                       Category
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Rating
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                       Lessons
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -154,15 +147,7 @@ export default function AdminCourse() {
                       <td className="px-6 py-4 whitespace-nowrap">
                         <Badge className="bg-primary/10 text-primary">{c.category}</Badge>
                       </td>
-
-                      {/* Rating */}
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center gap-1">
-                          <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                          <span className="text-sm font-medium">{c.rating}</span>
-                        </div>
-                      </td>
-
+ 
                       {/* Lessons */}
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                         <div className="flex items-center gap-1">
@@ -223,10 +208,7 @@ export default function AdminCourse() {
                   </div>
 
                   <div className="flex items-center gap-4 text-sm text-gray-600">
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      {c.rating}
-                    </div>
+ 
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4 text-gray-400" />
                       {c.lessons} lessons

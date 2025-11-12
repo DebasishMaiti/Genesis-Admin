@@ -18,7 +18,7 @@ const ALL_SUBJECTS = [
   "English",
   "General Awareness",
   "Reasoning",
-  "Mathematics",
+  "Mathematics",         
   "General Intelligence",
   "General Science",
   "Computer Knowledge",

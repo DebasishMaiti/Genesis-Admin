@@ -534,12 +534,6 @@ export default function AdminEditAcademics() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
                   <div>
-                    <Label className="text-gray-500">Rating</Label>
-                    <p className="font-semibold text-lg flex items-center gap-1">
-                      ⭐ {currentClass.rating}
-                    </p>
-                  </div>
-                  <div>
                     <Label className="text-gray-500">Students</Label>
                     <p className="font-semibold text-lg">{currentClass.students}</p>
                   </div>

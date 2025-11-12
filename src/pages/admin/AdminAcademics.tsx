@@ -3,7 +3,6 @@ import {
   Plus,
   Edit,
   Eye,
-  Star,
   Users,
   BookOpen,
 } from "lucide-react";
@@ -59,7 +58,6 @@ interface TuitionClass {
   class: string;
   title: string;
   description: string;
-  rating: number;
   students: number;
   teachers: number;
   price: number;
@@ -75,7 +73,7 @@ const demoData: TuitionClass[] = [
     "class": "Class 10",
     "title": "CBSE Class 10",
     "description": "Comprehensive course covering all CBSE Class 10 subjects with live classes, expert teachers, and complete study materials.",
-    "rating": 4.8,
+ 
     "students": 1250,
     "teachers": 8,
     "price": 24999,
@@ -165,7 +163,7 @@ const demoData: TuitionClass[] = [
     class: "Class 9",
     title: "CBSE Class 9",
     description: "Complete CBSE Class 9 curriculum with interactive learning.",
-    rating: 4.6,
+ 
     students: 980,
     teachers: 6,
     price: 22999,
@@ -179,7 +177,7 @@ const demoData: TuitionClass[] = [
     class: "Class 10",
     title: "ICSE Class 10",
     description: "ICSE board comprehensive course for Class 10 students.",
-    rating: 4.7,
+ 
     students: 1100,
     teachers: 7,
     price: 26999,
@@ -195,8 +193,6 @@ export default function AdminAcademics() {
   const handleSort = (value: string) => {
     const sorted = [...classes].sort((a, b) => {
       switch (value) {
-        case "rating":
-          return b.rating - a.rating;
         case "price-low":
           return a.price - b.price;
         case "price-high":
@@ -204,7 +200,7 @@ export default function AdminAcademics() {
         case "students":
           return b.students - a.students;
         default:
-          return 0;
+          return 0
       }
     });
     setClasses(sorted);
@@ -235,7 +231,6 @@ export default function AdminAcademics() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="popular">Most Popular</SelectItem>
-                  <SelectItem value="rating">Top Rated</SelectItem>
                   <SelectItem value="students">Most Students</SelectItem>
                   <SelectItem value="price-low">Price: Low to High</SelectItem>
                   <SelectItem value="price-high">Price: High to Low</SelectItem>
@@ -259,7 +254,6 @@ export default function AdminAcademics() {
                       <th className="p-4 text-left font-semibold text-gray-900">Class Title</th>
                       <th className="p-4 text-left font-semibold text-gray-900">Board</th>
                       <th className="p-4 text-left font-semibold text-gray-900">Class</th>
-                      <th className="p-4 text-left font-semibold text-gray-900">Rating</th>
                       <th className="p-4 text-center font-semibold text-gray-900">Students</th>
                       <th className="p-4 text-center font-semibold text-gray-900">Teachers</th>
                       <th className="p-4 text-right font-semibold text-gray-900">Price</th>
@@ -274,12 +268,6 @@ export default function AdminAcademics() {
                         </td>
                         <td className="p-4 text-sm text-gray-700">{classData.board}</td>
                         <td className="p-4 text-sm text-gray-700">{classData.class}</td>
-                        <td className="p-4">
-                          <div className="flex items-center gap-1">
-                            <Star className="w-4 h-4 text-yellow-500" />
-                            <span className="font-medium">{classData.rating}</span>
-                          </div>
-                        </td>
                         <td className="p-4 text-center">
                           <div className="flex items-center justify-center gap-1">
                             <Users className="w-4 h-4 text-blue-500" />
@@ -359,14 +347,6 @@ export default function AdminAcademics() {
                       {/* Stats Grid */}
                       <div className="grid grid-cols-2 gap-3">
                         <div className="flex items-center gap-2">
-                          <Star className="w-4 h-4 text-yellow-500 flex-shrink-0" />
-                          <div>
-                            <p className="text-xs text-gray-500">Rating</p>
-                            <p className="font-semibold text-sm">{classData.rating}</p>
-                          </div>
-                        </div>
-
-                        <div className="flex items-center gap-2">
                           <Users className="w-4 h-4 text-blue-500 flex-shrink-0" />
                           <div>
                             <p className="text-xs text-gray-500">Students</p>
@@ -420,7 +400,6 @@ export default function AdminAcademics() {
               ))
             )}
           </div>
- 
         </div>
       </div>
     </Layout>

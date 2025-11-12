@@ -30,7 +30,7 @@ interface Book extends BookFormData {
   href: string;
   thumb: string;
 }
-
+     
 const books: Book[] = [
   {
     id: "book-1",
@@ -322,9 +322,6 @@ export default function AdminEditBook() {
                     </Badge>
                     <Badge variant="outline" className="text-sm">
                       {currentBook.type}
-                    </Badge>
-                    <Badge variant="default" className="text-sm">
-                      {currentBook.rating} stars
                     </Badge>
                   </div>
 

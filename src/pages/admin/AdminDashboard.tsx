@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { 
-  Users, GraduationCap, Landmark, BookOpen, ClipboardCheck, DollarSign, Filter,
+  Users, GraduationCap, Landmark, BookOpen, ClipboardCheck, DollarSign,
   MoreVertical, Eye, Edit, Trash2
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,7 +11,7 @@ import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
   DropdownMenuSeparator, DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import Layout from "@/components/layout/Layout";
 
@@ -112,12 +112,12 @@ const MobileUserCard: React.FC<{ user: User; onAction: (action: string, id: numb
 );
  
 export default function AdminDashboard() {
-  const [searchTerm, setSearchTerm] = useState<string>("");
+  // const [searchTerm, setSearchTerm] = useState<string>("");
  
-  const filteredUsers = recentUsers.filter((user) =>
-    user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    user.email.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // const filteredUsers = recentUsers.filter((user) =>
+  //   user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  //   user.email.toLowerCase().includes(searchTerm.toLowerCase())
+  // );
 
   const handleAction = (action: string, userId: number) => {
     console.log(action, userId);
@@ -140,7 +140,7 @@ export default function AdminDashboard() {
             <CardHeader className="pb-3 sm:pb-4">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0">
                 <CardTitle className="text-base sm:text-lg">Recent Users</CardTitle>
-                <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+                {/* <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
                   <Input
                     placeholder="Search users..."
                     className="h-9 w-full sm:w-48"
@@ -151,13 +151,13 @@ export default function AdminDashboard() {
                     <Filter className="w-4 h-4 mr-2" />
                     Filter
                   </Button>
-                </div>
+                </div> */}
               </div>
             </CardHeader>
             <CardContent className="pt-0">
               {/* Mobile: Cards */}
               <div className="lg:hidden space-y-3">
-                {filteredUsers.map((user) => (
+                {recentUsers.map((user) => (
                   <MobileUserCard key={user.id} user={user} onAction={handleAction} />
                 ))}
               </div>
@@ -175,7 +175,7 @@ export default function AdminDashboard() {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    {filteredUsers.map((user) => (
+                    {recentUsers.map((user) => (
                       <TableRow key={user.id}>
                         <TableCell className="font-medium">
                           <div className="flex items-center gap-3">

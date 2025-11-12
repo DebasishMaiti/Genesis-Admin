@@ -14,7 +14,6 @@ import Layout from '@/components/layout/Layout';
 
 const subjectSchema = z.object({
   name: z.string().min(2, 'Subject name must be at least 2 characters'),
-  code: z.string().min(1, 'Subject code is required'),
   description: z.string().optional(),
 });
 
@@ -37,7 +36,6 @@ interface SubjectClass {
 interface Subject {
   id: string;
   name: string;
-  code: string;
   description?: string;
   classes: SubjectClass[];
 }
@@ -46,7 +44,7 @@ const mockData: Subject[] = [
   {
     id: '1',
     name: 'Mathematics',
-    code: 'MATH101',
+ 
     description: 'Introduction to advanced mathematical concepts',
     classes: [
       { id: 'c1', title: 'Linear Algebra', duration: '3 hours', order: 1 },
@@ -57,7 +55,7 @@ const mockData: Subject[] = [
   {
     id: '2',
     name: 'Physics',
-    code: 'PHY201',
+ 
     description: 'Fundamental principles of classical and modern physics',
     classes: [
       { id: 'c4', title: 'Mechanics', duration: '3 hours', order: 1 },
@@ -67,7 +65,7 @@ const mockData: Subject[] = [
   {
     id: '3',
     name: 'Computer Science',
-    code: 'CS301',
+ 
     description: 'Core programming and algorithms',
     classes: [
       { id: 'c6', title: 'Data Structures', duration: '4 hours', order: 1 },
@@ -88,7 +86,7 @@ export default function AdminCreateCourseSubject() {
 
   const subjectForm = useForm<SubjectFormData>({
     resolver: zodResolver(subjectSchema),
-    defaultValues: { name: '', code: '', description: '' },
+    defaultValues: { name: '', description: '' },
   });
 
 const classForm = useForm<ClassFormData>({
@@ -118,7 +116,7 @@ const classForm = useForm<ClassFormData>({
     setEditingSubject(subject);
     subjectForm.reset({
       name: subject.name,
-      code: subject.code,
+ 
       description: subject.description || '',
     });
     setIsSubjectDialogOpen(true);
@@ -177,7 +175,7 @@ const classForm = useForm<ClassFormData>({
     if (editingSubject) {
       subjectForm.reset({
         name: editingSubject.name,
-        code: editingSubject.code,
+ 
         description: editingSubject.description || '',
       });
     } else {
@@ -234,19 +232,7 @@ const classForm = useForm<ClassFormData>({
                       </FormItem>
                     )}
                   />
-                  <FormField
-                    control={subjectForm.control}
-                    name="code"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Subject Code</FormLabel>
-                        <FormControl>
-                          <Input placeholder="MATH101" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+ 
                   <FormField
                     control={subjectForm.control}
                     name="description"
@@ -293,10 +279,6 @@ const classForm = useForm<ClassFormData>({
                       <div className="flex justify-between items-start">
                         <div className="flex-1">
                           <h3 className="font-semibold text-gray-900">{subject.name}</h3>
-                          <p className="text-sm text-gray-600 flex items-center mt-1">
-                            <Hash className="h-3 w-3 mr-1" />
-                            {subject.code}
-                          </p>
                           <p className="text-xs text-gray-500 mt-1">
                             {subject.classes.length} class{subject.classes.length !== 1 ? 'es' : ''}
                           </p>
@@ -334,7 +316,6 @@ const classForm = useForm<ClassFormData>({
                       <CardTitle>{selectedSubject.name}</CardTitle>
                       <CardDescription className="flex items-center mt-1">
                         <Hash className="h-4 w-4 mr-1" />
-                        {selectedSubject.code}
                         {selectedSubject.description && (
                           <p className="mt-2 text-sm">{selectedSubject.description}</p>
                         )}
